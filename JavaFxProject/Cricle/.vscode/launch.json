@@ -1,0 +1,53 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "SnakeAnimation",
+      "request": "launch",
+      "mainClass": "SnakeAnimation",
+      "projectName": "Cricle_1b91bbce"
+    },
+    {
+      "type": "java",
+      "name": "Flag",
+      "request": "launch",
+      "mainClass": "Flag",
+      "projectName": "Cricle_1b91bbce"
+    },
+    {
+      "type": "java",
+      "name": "UserDataRegistration",
+      "request": "launch",
+      "mainClass": "UserDataRegistration",
+      "projectName": "Cricle_1b91bbce"
+    },
+    {
+      "type": "java",
+      "name": "RegistrationForm",
+      "request": "launch",
+      "mainClass": "RegistrationForm",
+      "projectName": "Cricle_1b91bbce",
+      "noDebug": false,
+      "__progressId": "0b9c2e88-ce6c-4697-b25d-06f4917e24a9",
+      "__origin": "internal"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "App",
+      "projectName": "Cricle_1b91bbce",
+      "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+    }
+  ]
+}
