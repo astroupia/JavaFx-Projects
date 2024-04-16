@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "App",
+      "projectName": "Cricle_1ceeffc5"
+    },
+    {
+      "type": "java",
       "name": "SnakeAnimation",
       "request": "launch",
       "mainClass": "SnakeAnimation",
