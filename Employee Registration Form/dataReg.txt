@@ -1,0 +1,15 @@
+ First Name: Nahom
+ Father Name: 
+ Grand Father Name: 
+ Sex: null
+ Address: 
+ Birth Date: null
+ Nationality: 
+ Salary: 
+ Occupation: Select Occupation
+ Eduaction Levelnull
+ Experience: null
+ Phone Number: 
+ Email: 
+ EmployeeId: 
+  ------ DONE ------ 
