@@ -12,7 +12,7 @@ public class Flag extends Application {
     @Override
     public void start(Stage primaryStage) {
         Pane pane = new Pane(); // Create a pane
-        ImageView imageView = new ImageView("Flag.jpg"); // Load an image (flag)
+        ImageView imageView = new ImageView("./assets/Flag.jpg"); // Load an image (flag)
         pane.getChildren().add(imageView); // Add the image to the pane
 
         PathTransition pt = new PathTransition(); // Create a PathTransition

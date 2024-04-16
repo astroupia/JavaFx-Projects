@@ -24,7 +24,7 @@ public class MovingDvd extends Application {
         primaryStage.setTitle("DVD");
 
         // Load the image
-        Image image = new Image("./dvd.png");
+        Image image = new Image("./assets/dvd.png");
         
         // Create the image view
         imageView = new ImageView(image);
