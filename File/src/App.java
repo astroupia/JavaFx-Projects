@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package n5april22;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -22,11 +15,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
-/**
- *
- * @author Menbere
- */
-public class N5April22 extends Application {
+public class App extends Application {
     
     @Override
     public void start(Stage primaryStage) {
@@ -68,12 +57,12 @@ public class N5April22 extends Application {
                 String dob=dp.getValue().toString();
                 fw.append("\n"+name+"\t"+sex+"\t"+address+"\t"+dob);
             } catch (IOException ex) {
-                Logger.getLogger(N5April22.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
             } finally {
                 try {
                     fw.close();
                 } catch (IOException ex) {
-                    Logger.getLogger(N5April22.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
             
@@ -96,18 +85,16 @@ public class N5April22 extends Application {
                 stage.setScene(s);
                 stage.show();
             } catch (FileNotFoundException ex) {
-                Logger.getLogger(N5April22.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
             } catch (IOException ex) {
-                Logger.getLogger(N5April22.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
             } finally {
                 try {
                     bf.close();
                 } catch (IOException ex) {
-                    Logger.getLogger(N5April22.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
-        
-        
         
         });
         ToggleGroup tgS=new ToggleGroup();
@@ -132,10 +119,7 @@ public class N5April22 extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         launch(args);
     }
