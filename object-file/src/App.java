@@ -1,4 +1,7 @@
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -48,8 +51,17 @@ public class App extends Application {
     
     public void writeIntoFIle (User user) {
         File file = new File("data.txt");
-
+        try (FileOutputStream fout = new FileOutputStream(file)) {
+            ObjectOutputStream objOut = new ObjectOutputStream(fout);
+            objOut.writeObject(user);
+            objOut.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
+
+    
     public static void main(String[] args) throws Exception {
         launch(args);
     }
