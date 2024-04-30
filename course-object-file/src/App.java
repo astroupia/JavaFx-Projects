@@ -69,6 +69,24 @@ public class App extends Application {
 
         });
 
+        printButton.setOnAction(e -> {
+            File file = new File("data.txt");
+            Course data = new Course();
+            try {
+                data = readIntoFile(file);
+            } catch (FileNotFoundException e1) {
+                // TODO Auto-generated catch block
+                e1.printStackTrace();
+            } catch (ClassNotFoundException e1) {
+                // TODO Auto-generated catch block
+                e1.printStackTrace();
+            } catch (IOException e1) {
+                // TODO Auto-generated catch block
+                e1.printStackTrace();
+            }
+            printLabel.setText(data.toString());
+        });
+
         StackPane stackPane = new StackPane();
         stackPane.getChildren().addAll(vbox);
 
@@ -84,12 +102,13 @@ public class App extends Application {
             ObjectOutputStream objOut = new ObjectOutputStream(fout);
             objOut.writeObject(course);
             objOut.close();
-            readIntoFile(file);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
+
+
 
     public static Course readIntoFile (File file) throws FileNotFoundException, IOException, ClassNotFoundException {
         FileInputStream fin =  new FileInputStream(file);
@@ -101,9 +120,5 @@ public class App extends Application {
     
     public static void main(String[] args) throws Exception {
         launch(args);
-        File file = new File("data.txt");
-        Course course;
-        course = readIntoFile(file);
-        // course.toString;
     }
 }
