@@ -68,8 +68,7 @@ public class App extends Application {
 
         primaryStage.setScene(scene);
         primaryStage.show();
-    }
-    
+    }    
     public static void writeIntoFile (User user) throws ClassNotFoundException {
         File file = new File("data.txt");
         try (FileOutputStream fout = new FileOutputStream(file)) {

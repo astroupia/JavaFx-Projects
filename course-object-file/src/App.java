@@ -63,7 +63,6 @@ public class App extends Application {
             try {
                 writeIntoFile(course);
             } catch (ClassNotFoundException e1) {
-                // TODO Auto-generated catch block
                 e1.printStackTrace();
             }
 
@@ -107,8 +106,6 @@ public class App extends Application {
             e.printStackTrace();
         }
     }
-
-
 
     public static Course readIntoFile (File file) throws FileNotFoundException, IOException, ClassNotFoundException {
         FileInputStream fin =  new FileInputStream(file);
