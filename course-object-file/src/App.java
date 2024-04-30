@@ -50,7 +50,7 @@ public class App extends Application {
         hbox3.setSpacing(10);
 
         VBox vbox = new VBox();
-        vbox.getChildren().addAll(hbox1, hbox2);
+        vbox.getChildren().addAll(hbox1, hbox2, hbox3);
         vbox.setPadding(new Insets(0, 0, 10, 10));
         vbox.setSpacing(10);
 
