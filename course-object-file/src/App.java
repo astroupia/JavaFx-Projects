@@ -74,13 +74,10 @@ public class App extends Application {
             try {
                 data = readIntoFile(file);
             } catch (FileNotFoundException e1) {
-                // TODO Auto-generated catch block
                 e1.printStackTrace();
             } catch (ClassNotFoundException e1) {
-                // TODO Auto-generated catch block
                 e1.printStackTrace();
             } catch (IOException e1) {
-                // TODO Auto-generated catch block
                 e1.printStackTrace();
             }
             printLabel.setText(data.toString());
@@ -96,13 +93,11 @@ public class App extends Application {
     }
     
     public static void writeIntoFile (Course course) throws ClassNotFoundException {
-        File file = new File("data.txt");
-        try (FileOutputStream fout = new FileOutputStream(file)) {
+        try (FileOutputStream fout = new FileOutputStream(new File("data.txt"))) {
             ObjectOutputStream objOut = new ObjectOutputStream(fout);
             objOut.writeObject(course);
             objOut.close();
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
