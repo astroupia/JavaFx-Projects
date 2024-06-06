@@ -107,7 +107,8 @@ public class App extends Application {
         occupationComboBox.setItems(FXCollections.observableArrayList(
                 "Security",
                 "Accountant",
-                "Software Engineer"
+                "Software Engineer",
+                "Accountant"
         ));
         
         // Set a default value for the occupationComboBox
@@ -165,6 +166,7 @@ public class App extends Application {
         // Handling Button
         registerButton.setOnAction(e -> {
             File file = new File("dataReg.txt");
+            // FileWriter writer = new FileWriter(file);
             try (BufferedWriter writeFile = new BufferedWriter(new FileWriter(file))) {
                 writeFile.write(" First Name: " + yourNameField.getText() + "\n");
                 writeFile.write(" Father Name: " + fatherNameField.getText()+ "\n");
@@ -209,7 +211,7 @@ public class App extends Application {
         });
 
         // Setting Up Scene
-        Scene mainScene = new Scene(stackPane, 1000, 700);
+        Scene mainScene = new Scene(stackPane, 1000, 500);
         primaryStage.setScene(mainScene);
 
         // Setting Up Primary Stage
