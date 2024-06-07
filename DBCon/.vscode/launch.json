@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "dbcon",
+      "request": "launch",
+      "mainClass": "dbcon",
+      "projectName": "DBCon_c62b362b"
+    },
+    {
+      "type": "java",
       "name": "Current File",
       "request": "launch",
       "mainClass": "${file}"
